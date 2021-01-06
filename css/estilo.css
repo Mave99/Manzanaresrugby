@@ -1,0 +1,467 @@
+*{
+    margin: 0%;
+    padding: 0px;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: spartan;
+    src: url("../tipografias/Spartan-VariableFont_wght.ttf");
+    font-weight: 400;
+}
+/*@font-face{
+    font-family: cleanthaRegular;
+    src: url("../tipografias/Cleantha-Regular.ttf");
+}*/
+
+/* Html header*/ /*PAGINA COMPLETA*/
+
+html{ 
+    font-family: spartan;
+    color: white;
+    /*background-color: rgb(31, 27, 26);*/
+    position: relative;
+    background-image: url(../imagen/fondo.svg);
+    background-attachment: fixed;
+}
+header {
+    margin-left: auto;
+    margin-right: auto;
+}
+.titulo {
+    text-align: center;
+    margin-left: auto;
+    text-decoration: underline;
+    font-size: 100%;
+    margin-top: 3%;
+}
+.logo {
+    width: 10% ;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding-top: 10px;
+}
+.portada {
+    display: block;
+    margin-left:auto ;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 400px;
+    object-fit: cover; 
+}
+body{
+    font-family: spartan;
+    color: white;
+    position: relative;
+    background-image: linear-gradient(rgba(45 45 45 / 86%), black);
+    background-color: transparent;
+    /* background-color: rgb(45 45 45 / 86%); */
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    width: 75%;
+    margin-top: 0%;
+}
+ /*Nav (menu) */
+ 
+nav{
+    font-family: spartan;
+    text-align: center;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+    height: 15%;
+    width: 75%;
+    margin-top: 0px;
+    position: relative;
+}
+nav div{
+    display: inline-block;
+    /* border-bottom: solid white; */
+    border-top: solid white;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10%;
+    margin-top: 10%;
+    
+}
+nav div ul {
+    padding-inline-start: 0%;
+    padding: 0%;
+    margin: 0%;
+    list-style: none;
+}
+nav div ul li {
+    display: inline-block;
+    padding: 4%;
+}
+nav div ul li ul {
+    position: absolute;
+    display: none;
+}
+nav div ul li ul li{
+    display:  block;
+}
+nav div ul li:hover ul{
+    display: block;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+}
+nav div ul li a {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    transition: all;
+}
+nav a:hover {
+    background-color:rgb(32 120 65);
+    color: white;
+}
+/* Submenu*/
+.submenu {
+    padding: 20px;
+    background-color:rgb(32 120 65); 
+    text-align: center;
+}
+/*aside sponsors*/ 
+aside {
+    display: grid;
+    grid-template-columns: repeat(7, 125px) ;
+    /* grid-template-rows: repeat(2, 125px); */
+    justify-content: space-evenly;
+}
+
+aside a {
+    text-decoration: none;
+    color: #51884e;
+    /* justify-self: center; */
+    text-align: center;
+    margin-top: 20px;
+    transition: all;
+}
+aside img:hover {
+    transform: scale(1.2);
+    object-fit: scale-down;
+}
+/* aside a:hover {
+    font-size: 150%;
+    color:#51884e ;
+} */
+/* aside img{
+    width: 125px;
+    height: 125px;
+    object-fit: scale-down;
+    margin-bottom: 50px;
+} */
+
+/* footer */
+footer {
+  height: 300px;
+  display: grid;
+  grid-template-areas: 
+  "instagram facebook"
+  "p p";
+  grid-template-columns: 60px 60px;
+  grid-template-rows: repeat(2, 50px);
+  grid-column-gap: 10px;
+  justify-content: center;
+  align-content: flex-end;
+}
+footer .div1 {
+    grid-area: instagram;
+}
+footer .div2 {
+    grid-area: facebook;
+}
+footer p {
+    grid-area: p;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+}
+footer div {
+    display: flex;
+    font-size: 30px;
+    width: 50px;
+    justify-content: center;
+}
+footer i {
+    color: white;
+}
+
+/* Section*/ /*INDEX*/
+.sectionDelInicio {
+    color: white;
+    display: flex;
+    margin-bottom: 200px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+.sectionDelInicio .divArticle{
+    width: 500px;
+    /* flex-shrink: 1 1; */
+    align-items: flex-end;
+}
+.titulos{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline 1px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.sectionDelInicio video {
+    width: 100%;
+    height: 200%;
+    object-fit: cover;
+    flex-shrink: 1 1;
+}
+@media only screen and (max-width: 1400px) {
+    body {
+        width: 100%;
+    }
+    .sectionDelInicio {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        margin-bottom: 100px;
+    }
+}
+@media only screen and (max-width: 576px) {
+    body {
+        width: 100%;
+    }
+    .sectionDelInicio {
+        display: flex;
+        flex-flow: column wrap;
+        width: 350px;
+        justify-content: center;
+    }
+
+    .sectionDelInicio video {
+        display: flex;
+        width: 300px;
+        height: 200%;
+        object-fit: cover;
+        justify-content: center;
+    }
+}
+ /* pagina NOSOTROS*/
+
+ .article__nosotros {
+     display: grid;
+     grid-template-areas:
+     "h1 h1"
+     "p div";
+     grid-template-columns: 2fr 1fr;
+     grid-column-gap: 20px;
+     justify-content:space-around ;
+     margin: 50px;
+ }
+.article__nosotros__h1 {
+    grid-area: h1;
+    margin: none;
+}
+.article__nosotros__p {
+    grid-area: p;
+    text-align: justify;
+}
+.article__nosotros__div{
+    grid-area: div;
+    display: grid;
+}
+.imagen__nosotros {
+    width: 100%;
+    justify-self: center;
+    align-self: center;
+}
+
+.localizacion {
+    display: grid;
+    grid-template-areas: 
+    "inframe form";
+    grid-template-rows: 2fr 1fr;
+    grid-column-gap: 20px;
+    margin: 50px;
+    margin-top: 100px;
+}
+.localizacion .formulario__contacto {
+    grid-area: form;
+    justify-self: left;
+    align-self: flex-end;
+}
+.localizacion .mapa {
+    grid-area: inframe;
+    justify-self: center;
+}
+
+/* .formularioDeContacto */
+ 
+.formularioDeContacto input {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    background-color: #51884e;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+}
+.formularioDeContacto ::placeholder {
+    color: white;
+}
+
+/* RUGBY */
+
+/* .sectionRugby {
+    display: grid;
+    grid-template-columns: repeat(2, 600px);
+    grid-template-rows: repeat(2, 450px);
+    grid-column-gap: 50px;
+    grid-row-gap: 100px;
+    justify-content: center;
+    margin: auto;
+} */
+.sectionRugby {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    margin-bottom: 200px;
+}
+.sectionRugby .divPadre {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    margin-bottom: 100px;
+}
+.sectionRugby .divHijo {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.sectionRugby .divHijo:hover {
+    transform: scale(1.10);
+    color: #51884e;
+}
+.sectionRugby a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    transition: all;
+    font-size: xx-large;
+}
+.sectionRugby a:hover {
+    color: #51884e;
+}
+.sectionRugby img {
+    display: flex;
+    width: 360px;
+    height: 210px;
+    object-fit: cover;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/*HOCKEY*/ 
+
+.sectionHockey {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    margin-bottom: 200px;
+}
+.sectionHockey .divPadre {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    margin-bottom: 100px;
+}
+.sectionHockey .divHijo {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.sectionHockey .divHijo:hover {
+    transform: scale(1.10);
+    color: #51884e;
+}
+.sectionHockey a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    transition: all;
+    font-size: xx-large;
+}
+.sectionHockey a:hover {
+    color: #51884e;
+}
+.sectionHockey img {
+    display: flex;
+    width: 360px;
+    height: 210px;
+    object-fit: cover;
+    align-items: center;
+    margin-bottom: 20px;
+}
+/* Torneos */
+.botonesTorneos {
+    display: flex;
+    width: 50%;
+    margin: auto;
+}
+.botonesTorneos .boton {
+    background-color: #51884e;
+    border-color: #51884e;
+    margin: 10px;
+    border-radius: 0%;
+}
+.botonesTorneos .boton:hover {
+    background-color: #477945;
+}
+.calendarioPosicion {
+    display: flex;
+    flex-flow: row-reverse;
+    margin-right: 8%;
+    margin-top: 50px;
+}
+.calendarioPosicion .botonDown {
+    background-color: #477945;
+}
+.sectionTorneos {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    margin-bottom: 200px;
+}
+.sectionTorneos .divPadre {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    margin-bottom: 100px;
+}
+.sectionTorneos .divHijo {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.sectionTorneos p {
+    margin-top: 20px;
+}
+.sectionTorneos .torneos {
+    border-top: solid white 1px;
+    border-bottom: solid white 1px;
+    margin-bottom: 20px;
+}
+.sectionTorneos .fecha {
+    font-size: 10px;
+    font-weight: bold;
+}

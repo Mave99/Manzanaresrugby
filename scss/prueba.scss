@@ -1,0 +1,99 @@
+@import "colores";
+$color: verde;
+.div__prueba {
+    @if $color == verde {
+        color: $verde-oscuro;
+    }
+    @else if $color == claro {
+        color: $verde-claro;
+    }
+    @else {
+        color: $blanco;
+    }
+}
+
+@for $articulo from 1 to 5 {
+    .section_#{$articulo} {
+        background-color: $verde-oscuro;
+        width: 2em *$articulo;
+    }
+}
+
+@for $articulo from 1 through 3 {
+    .div__#{$articulo} {
+        width: 2em *$articulo;
+    }
+}
+
+@each $seccion in verde,verde-claro,gris {
+    .#{$seccion}_portada {
+        background-image: url(../imagen/#{$seccion}.png);
+    }
+}
+
+$map:(key1: horneo,key2: pasto,key3: nublado);
+$colores: (
+    hornero: #51884e,
+    pasto: green,
+    nublado: grey,
+);
+@each $name-color,$bgcolor in $colores {
+    .btn__#{$name-color}{
+        background-color: $bgcolor;
+    }
+}
+
+@mixin tamanios ($ancho,$alto) {
+    width: $ancho;
+    height: $alto;
+}
+
+.sectionHockey {
+    @include tamanios(100%,100%);
+    margin: auto;
+    margin-bottom: 200px;
+     .divPadre {
+        @include tamanios(100%,100%);
+        margin: auto;
+        margin-bottom: 100px;
+        .divHijo {
+            @include tamanios(100%,100%);
+            margin: auto;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+                &:hover {
+                    transform: scale(1.10);
+                    color: $verde-oscuro;
+                    a {
+                        text-decoration: none;
+                        color: $blanco;
+                        text-align: center;
+                        transition: all;
+                        font-size: xx-large;
+                        &:hover {
+                            color: $verde-oscuro;
+                            img {
+                                display: flex;
+                                @include tamanios(360px,210px);
+                                object-fit: cover;
+                                align-items: center;
+                                margin-bottom: 20px;
+                        }    }
+                }   }
+            }
+    }
+}
+
+
+.div__prueba {
+    @include tamanios(200px,150px);
+}
+
+aside {
+    img{
+        @include tamanios(125px,125px);
+        object-fit: scale-down;
+        margin-bottom: 50px;
+    }
+}

@@ -1,0 +1,91 @@
+.div__prueba {
+  color: #51884e; }
+
+.section_1 {
+  background-color: #51884e;
+  width: 2em; }
+
+.section_2 {
+  background-color: #51884e;
+  width: 4em; }
+
+.section_3 {
+  background-color: #51884e;
+  width: 6em; }
+
+.section_4 {
+  background-color: #51884e;
+  width: 8em; }
+
+.div__1 {
+  width: 2em; }
+
+.div__2 {
+  width: 4em; }
+
+.div__3 {
+  width: 6em; }
+
+.verde_portada {
+  background-image: url(../imagen/verde.png); }
+
+.verde-claro_portada {
+  background-image: url(../imagen/verde-claro.png); }
+
+.gris_portada {
+  background-image: url(../imagen/gris.png); }
+
+.btn__hornero {
+  background-color: #51884e; }
+
+.btn__pasto {
+  background-color: green; }
+
+.btn__nublado {
+  background-color: grey; }
+
+.sectionHockey {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  margin-bottom: 200px; }
+  .sectionHockey .divPadre {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    margin-bottom: 100px; }
+    .sectionHockey .divPadre .divHijo {
+      width: 100%;
+      height: 100%;
+      margin: auto;
+      margin-top: 20px;
+      display: flex;
+      justify-content: center; }
+      .sectionHockey .divPadre .divHijo:hover {
+        transform: scale(1.1);
+        color: #51884e; }
+        .sectionHockey .divPadre .divHijo:hover a {
+          text-decoration: none;
+          color: white;
+          text-align: center;
+          transition: all;
+          font-size: xx-large; }
+          .sectionHockey .divPadre .divHijo:hover a:hover {
+            color: #51884e; }
+            .sectionHockey .divPadre .divHijo:hover a:hover img {
+              display: flex;
+              width: 360px;
+              height: 210px;
+              object-fit: cover;
+              align-items: center;
+              margin-bottom: 20px; }
+
+.div__prueba {
+  width: 200px;
+  height: 150px; }
+
+aside img {
+  width: 125px;
+  height: 125px;
+  object-fit: scale-down;
+  margin-bottom: 50px; }
