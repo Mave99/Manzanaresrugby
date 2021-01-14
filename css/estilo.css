@@ -66,7 +66,7 @@ body{
 }
  /*Nav (menu) */
  
-nav{
+/* nav{
     font-family: spartan;
     text-align: center;
     text-decoration: none;
@@ -76,10 +76,10 @@ nav{
     width: 75%;
     margin-top: 0px;
     position: relative;
+    
 }
 nav div{
     display: inline-block;
-    /* border-bottom: solid white; */
     border-top: solid white;
     width: 100%;
     margin-left: auto;
@@ -101,7 +101,7 @@ nav div ul li {
 nav div ul li ul {
     position: absolute;
     display: none;
-}
+} */
 nav div ul li ul li{
     display:  block;
 }

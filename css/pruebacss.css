@@ -39,10 +39,55 @@
   background-color: #51884e; }
 
 .btn__pasto {
-  background-color: green; }
+  background-color: red; }
 
 .btn__nublado {
   background-color: grey; }
+
+nav {
+  font-family: spartan;
+  text-align: center;
+  text-decoration: none;
+  margin-left: auto;
+  margin-right: auto;
+  height: 15%;
+  width: 75%;
+  margin-top: 0px;
+  position: relative; }
+  nav div {
+    display: inline-block;
+    border-top: solid white;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10%;
+    margin-top: 10%; }
+    nav div ul {
+      padding-inline-start: 0%;
+      padding: 0%;
+      margin: 0%;
+      list-style: none; }
+      nav div ul li {
+        display: inline-block;
+        padding: 4%; }
+        nav div ul li a:hover {
+          background-color: #207841;
+          color: white; }
+        nav div ul li ul {
+          position: absolute;
+          display: none; }
+          nav div ul li ul li {
+            display: block; }
+            nav div ul li ul li:hover ul {
+              display: block;
+              width: 100px;
+              height: 50px;
+              text-align: center; }
+
+.submenu {
+  padding: 20px;
+  background-color: #207841;
+  text-align: center; }
 
 .sectionHockey {
   width: 100%;
