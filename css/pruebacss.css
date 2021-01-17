@@ -125,6 +125,57 @@ nav {
               align-items: center;
               margin-bottom: 20px; }
 
+/*Pagina Nosotros*/
+.article__nosotros {
+  margin: 50px; }
+  .article__nosotros .article__nosotros_articulo1 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-bottom: 100px; }
+    .article__nosotros .article__nosotros_articulo1 .article__nosotros__p {
+      margin-bottom: 1rem;
+      padding: 5px; }
+    .article__nosotros .article__nosotros_articulo1 .tituloNegrita {
+      font-weight: bolder;
+      background-color: #51884e; }
+    .article__nosotros .article__nosotros_articulo1 .article__nosotros__imagen {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      padding: 5px; }
+  .article__nosotros .div__ubicacion__contacto {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between; }
+    .article__nosotros .div__ubicacion__contacto .div__mapa {
+      margin-bottom: 50px; }
+      .article__nosotros .div__ubicacion__contacto .div__mapa .mapa {
+        width: 100%;
+        height: 100%;
+        margin-top: 10px; }
+    .article__nosotros .div__ubicacion__contacto .formularioDeContacto {
+      margin-top: 10px;
+      margin-bottom: 50px; }
+      .article__nosotros .div__ubicacion__contacto .formularioDeContacto .nombre__form {
+        color: white; }
+      .article__nosotros .div__ubicacion__contacto .formularioDeContacto .email__form {
+        color: white; }
+      .article__nosotros .div__ubicacion__contacto .formularioDeContacto .form-group {
+        padding: 5px; }
+      .article__nosotros .div__ubicacion__contacto .formularioDeContacto input {
+        background-color: #207841;
+        border: #207841; }
+      .article__nosotros .div__ubicacion__contacto .formularioDeContacto .boton__form {
+        display: flex;
+        justify-content: end;
+        margin-left: 5px;
+        margin-top: 10px; }
+
+.tituloNegrita {
+  font-weight: bolder;
+  background-color: #51884e; }
+
 .div__prueba {
   width: 200px;
   height: 150px; }

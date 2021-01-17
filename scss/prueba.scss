@@ -137,8 +137,69 @@ nav{
             }
     }
 }
+/*Pagina Nosotros*/
+.article__nosotros{
+    margin: 50px;
 
-
+    .article__nosotros_articulo1{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        margin-bottom: 100px;
+        .article__nosotros__p {
+            margin-bottom: 1rem;
+            padding: 5px;
+        }
+        .tituloNegrita {
+            font-weight: bolder;
+            background-color: #51884e;
+        }
+        .article__nosotros__imagen {
+            @include tamanios(100%,100%);
+            object-fit: cover;
+            padding: 5px;
+        }
+    }
+    .div__ubicacion__contacto{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        .div__mapa {
+            margin-bottom: 50px;
+            .mapa{
+                @include tamanios(100%,100% );
+                margin-top: 10px;
+            }
+        }
+        .formularioDeContacto {
+            margin-top: 10px;
+            margin-bottom: 50px;
+            .nombre__form{
+                color: white;
+            }
+            .email__form {
+                color: white;
+            }
+            .form-group {
+                padding: 5px;
+            }
+            input {
+                background-color: $verde-claro;
+                border: $verde-claro;
+            }
+            .boton__form {
+                display: flex;
+                justify-content: end;
+                margin-left: 5px;
+                margin-top: 10px;
+            }
+        }
+    }
+}
+.tituloNegrita {
+    font-weight: bolder;
+    background-color: $verde-oscuro;
+}
 .div__prueba {
     @include tamanios(200px,150px);
 }

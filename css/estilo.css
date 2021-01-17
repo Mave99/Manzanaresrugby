@@ -250,7 +250,7 @@ footer i {
 }
  /* pagina NOSOTROS*/
 
- .article__nosotros {
+ /* .article__nosotros {
      display: grid;
      grid-template-areas:
      "h1 h1"
@@ -262,6 +262,7 @@ footer i {
  }
 .article__nosotros__h1 {
     grid-area: h1;
+    margin-bottom: 5%;
     margin: none;
 }
 .article__nosotros__p {
@@ -295,11 +296,11 @@ footer i {
 .localizacion .mapa {
     grid-area: inframe;
     justify-self: center;
-}
+} */
 
 /* .formularioDeContacto */
  
-.formularioDeContacto input {
+/* .formularioDeContacto input {
     display: grid;
     grid-template-rows: repeat(4, 1fr);
     background-color: #51884e;
@@ -310,7 +311,7 @@ footer i {
 .formularioDeContacto ::placeholder {
     color: white;
 }
-
+ */
 
 
 /* RUGBY */

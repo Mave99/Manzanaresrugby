@@ -34,34 +34,53 @@
            </nav>
            <section>
                <article class="article__nosotros">
-                   <h1 class="article__nosotros__h1">Nuestra Hisoria</h1>
-                    <p class="article__nosotros__p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, ut corrupti voluptatum dolore quidem molestias. Alias, enim. Voluptatem officiis distinctio cum deserunt voluptatibus, enim delectus iure, cupiditate iusto ea beatae.
-                    Fuga excepturi sapiente, impedit minus autem aperiam enim nesciunt possimus quidem? Impedit, atque voluptatum. Assumenda quis magni explicabo doloribus iste deserunt! Eos eveniet aliquid mollitia et inventore, quasi quibusdam sit.
-                    Similique soluta asperiores atque accusantium vel aspernatur dolor numquam. Recusandae fuga necessitatibus quas, qui magnam autem amet itaque earum officiis! Expedita autem sequi debitis repudiandae accusamus mollitia minus doloribus nemo.
-                    Consequatur obcaecati veritatis ipsa veniam incidunt! Dignissimos quam sapiente veritatis atque, quibusdam consequatur cum maxime tenetur quod architecto magni fugiat aperiam! Repellendus aut beatae rerum ipsam itaque veritatis quas vero.
-                    Nobis aspernatur corrupti delectus, nisi veritatis totam. Adipisci maxime tempore ipsam autem explicabo esse repellendus neque accusantium optio perferendis temporibus placeat, dolor nesciunt fugiat maiores cumque doloribus ab quidem nostrum?
-                    Officia nihil recusandae nisi voluptas, molestias at perferendis numquam minus? Perspiciatis at reprehenderit dolorem iure non ratione fugiat velit dignissimos et! Similique commodi incidunt quaerat tenetur. Adipisci quis harum et.
-                    Nisi consectetur iste delectus, cum amet numquam temporibus rem deserunt cupiditate provident natus reiciendis porro? Fugiat, distinctio dicta? Quidem in accusamus placeat aliquid error dolorum fuga, eos quo ex quas!
-                    Pariatur totam suscipit, illum numquam expedita corporis, quae consequuntur, autem sapiente accusamus natus! Eum sit voluptatum iste dolorem temporibus, ea aspernatur est repudiandae esse similique explicabo nemo enim accusantium deserunt!
-                    Esse odio sunt placeat repellendus maxime at minus, ea exercitationem porro et totam error eius neque, natus, enim aliquid delectus eum dolore voluptates. Ipsam ratione tempore incidunt, et voluptas obcaecati!
-                    Ab repudiandae odit ducimus quasi voluptates cumque veritatis accusantium delectus maxime quia id temporibus nisi illo dignissimos, doloremque ut voluptatibus ipsam tenetur ratione nesciunt tempora exercitationem ad asperiores. Vel, alias.
-                    Adipisci molestiae, voluptate, at consectetur voluptates ex alias ducimus accusantium earum, ipsam pariatur necessitatibus distinctio similique. Quo itaque earum reiciendis explicabo soluta voluptas aut dolor minus eveniet illo, expedita quidem!
-                    Consectetur porro alias, dolore architecto voluptatibus natus minus qui tempora ratione culpa perferendis totam, quos libero fugiat delectus doloribus quae sunt voluptatum nisi excepturi. Quasi iste corporis dolor impedit quas!.</p>
-                        <div class="article__nosotros__div"><img src="../imagen/nuestrahistoria.jpg" alt="" class="imagen__nosotros"></div>
+                   <h1>Nuestra Hisoria</h1>
+                   <div class="article__nosotros_articulo1">
+                        <div class="article__nosotros__p col-lg-8 col-md-8 col-sm-12">
+                            <p><span class="tituloNegrita">Palabras de Juan Pintos:</span> 
+                            La idea surgio fuera del cyber de los Ramauge, estamos Agustin Avalos, Sebas Ramauge, Marcos Lema y yo. La idea se la llevamos a mi viejo (Alberto Pintos, Berti para los pibes), medio que dudo pero igual nos acompaño. Empezamos a entrenar y eramos como 8 entrenadores y 3 pibes, o sea eramos mas entrenadores jaja. Y nada con un par de conos y pelotas prestadas por amigos, po el profesor Oviedo Pablo, Leandro Quesada un amigo mio. Arrancamos a entrenar por Noviembre ponele 
+                            y para el año siguiente, 2015, los prieros meses ya se lleno de chicos, empezamos a entrenar a los mas chicos, despues se creo una primera. 
+                            </p>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                        <img src="../imagen/nuestrahistoria.jpg" alt="" class="article__nosotros__imagen">
+                        </div>
+                    </div>
                </article>
+               <article class="article__nosotros">
+                   <div class="div__ubicacion__contacto">
+                        <div class=" div__mapa col-lg-8 col-md-6 col-sm-12">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3289.9809657748856!2d-59.00799374962933!3d-34.452631056929896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc8218d9966cd5%3A0x78da4deb107910c1!2sManzanares%20Rugby%20Club!5e0!3m2!1ses-419!2sar!4v1605311699536!5m2!1ses-419!2sar" width="0" height="0" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="mapa"></iframe>
+                        </div>
+                        <form method="POST" action="correo.php" class=" formularioDeContacto col-lg-4 col-md-6 col-sm-12">
+                            <div class="form-group">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" class="form-control nombre__form" id="nombre" name="nombre">
+                            </div>
+                            <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control email__form" id="email" name="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="msg">Mensaje</label>
+                                <textarea type="email" placeholder="Coloque su mensaje aquí" class="form-control" id="msg" name="msg"></textarea>
+                            </div>
+                            <input type="submit" class="btn btn-primary boton__form" name="enviar" value="Enviar Consulta">
+                        </form>
+                        <!-- <form method="POST" action="correo.php" class="formularioDeContacto">
+                            <fieldset>
+                                <legend>Contactanos</legend>
+                                <input type="text" name="Nombre" id="Nombre" placeholder="Nombre y Apellido" >
+                                <input type="email" name="Email" id="Email" placeholder="Email" >
+                                <input type="number" name="Telefono" id="Telefono" placeholder="Celular" >
+                                <textarea name="msg"  placeholder="Ingrese su consulta"></textarea>
+                                <input type="submit" name="Enviar" id="Enviar" >
+                            </fieldset>
+                        </form> -->
+                    </div>
+            </article>
            </section>
-            <div class="localizacion">
-                <form action="" class="formularioDeContacto">
-                    <fieldset>
-                        <legend>Contactanos</legend>
-                        <input type="text" name="Nombre" id="Nombre" placeholder="Nombre y Apellido" >
-                        <input type="email" name="Email" id="Email" placeholder="Email" >
-                        <input type="number" name="Telefono" id="Telefono" placeholder="Celular" >
-                        <input type="submit" name="Enviar" id="Enviar" >
-                    </fieldset>
-                </form>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3289.9809657748856!2d-59.00799374962933!3d-34.452631056929896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc8218d9966cd5%3A0x78da4deb107910c1!2sManzanares%20Rugby%20Club!5e0!3m2!1ses-419!2sar!4v1605311699536!5m2!1ses-419!2sar" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="mapa"></iframe>
-            </div>
+            
             <aside class="row aside__Nosotros">
                 <a href="https://www.bairesdev.com/the-daily-bundle/" class="col-lg-2 col-md-2 col-sm-4">
                         <img src="../imagen/bairesdev-logo-blue.svg" alt="bairesdev-logo-blue">
